@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    
+    <style>
+        button{
+            border-radius: 100px;
+            background-color: orange;
+            font-weight: bolder;
+            height:40px;
+        }
+
+    </style>
+</head>
+<body style="background-color:black;color: white " onload="showWatchList()">
+
+    <!-- <div style="position: relative;"> -->
+    <img src="./map.jpg" usemap="#map" style="z-index: 1" >
+    
+            <map name="#map">
+        <area shape="circle" coords="330,41,2" 
+href="./images/KashmirDal.jpg" />
+<area shape="circle" coords="365,158,2" 
+href="./images/indiaGateDelhi.jpg" />
+<area shape="circle" coords="380,187,2" 
+href="./images/agraTaj.jpg" />
+<area shape="circle" coords="673,226,2" 
+href="./images/elephantFallsShillong.jpg" />
+<area shape="circle" coords="572,281,2" 
+href="./images/vicMemorialCalcutta.jpg" />
+<area shape="circle" coords="275,347,2" 
+href="./images/gatewayMumbai.jpg" />
+<area shape="circle" coords="364,474,2" 
+href="./images/ISKCONbengaluru.avif" />
+<area shape="circle" coords="416,472,2" 
+href="./images/chennaiMarina.jpg" />
+<area shape="circle" coords="373,535,2" 
+href="./images/madurai.jpg" />
+    </map>
+
+<hr>
+
+<!-- 
+<canvas id="myCanvas" width="800" height="600"></canvas>
+    <script>
+         
+
+
+ 
+        const canvas = document.getElementById('myCanvas');
+const ctx = canvas.getContext('2d');
+
+
+const img = new Image();
+
+
+img.src = 'map.jpg';
+img.onload = function() {
+	ctx.drawImage(img, 0, 0);
+	
+	ctx.beginPath();
+	ctx.moveTo(x1, y1);
+	ctx.lineTo(x2, y2);
+
+	ctx.strokeStyle = 'red';
+	ctx.lineWidth = 2;
+	ctx.stroke();
+	
+};
+         
+    </script> -->
+    
+    <button style="background-color: white;color:black ;"><a href="main.html" style="text-decoration:none;">Return to Home</a></button>
+
+    <button style="background-color: white;color:black ;" onclick="clearWatchList()">Clear WatchList</button>
+
+    
+    <script src="main.js"></script>
+</body>
+
+</html>

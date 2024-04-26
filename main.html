@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang en>
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content ="width=device-width ,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE =edge">
+
+
+
+        <title>DasTrack and Co.</title>
+
+        <!-- STatic template is boiler code -->
+        
+        <link rel="stylesheet" href="main.css">
+        
+        <!-- nav is a div tag for navigation bar -->
+        
+
+
+        
+    </head>
+    <body>
+        <nav class ="navbar">
+            
+            <img style="border-radius: 100px;height:50px" class="brand-logo" src="images/logo.png" alt="Logo">
+
+            <ul class ="nav-links">
+                <li class="nav-items"><a href="https://www.irctc.co.in/nget/train-search">Trains</a></li>
+                <li class ="nav-items"><a href="https://www.makemytrip.com/">Flights</a></li>
+                <li class ="nav-items"><a href="https://www.redbus.in/">Cabs</a></li>
+                <li class = "nav-items"><a href="https://www.olacabs.com/">Custom</a></li>
+                
+            </ul>
+
+            <div class ="right-container">
+                <input type ="text" class="search-box" placeholder ="Search">
+                <button class ="sub-btn">Subscribe</button>
+                <!-- <button> -->
+                    <a href="#" class="login-link">Login</a>
+                <!-- </button> -->
+
+                <a href="cart.html"><image src="./images/mapLogo.png" id="cart"></image></a>
+            </div>
+        
+        </nav>
+  
+
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="slider" >
+                    
+                    <div class="slide-content">
+                        <h1 class="movie-title">Taj Mahal</h1>
+                        <p class="movie-des" >
+                            Taj Mahal One of the Seven Wonders , present here in India .
+                            Made my Muhghal Emperor Shah Jahan in name of his dead wife Mumtaz Mahal .
+                            A super sight!! 
+                        </p>
+
+                    </div>
+                    <img src= "images/agraTaj.jpg" alt="Latest"/>
+                </div>
+            </div>
+        </div>
+        <div id="outer">
+        <div class="video-card-container">
+            <div class="video-card">
+                <img src="images/irctc.png" alt="Irctc Logo" class="video-card-image">
+                <video src="" class="card-video" loop muted>
+
+                </video>
+            </div>
+
+        </div>
+        <div class="video-card-container">
+            <div class="video-card">
+                <img src="images/makemytrip.png"  alt="Make my Trip Logo"class="video-card-image">
+                <video src=""  class="card-video" loop muted>
+
+                </video>
+            </div>
+
+        </div>
+        <div class="video-card-container">
+            <div class="video-card">
+                <img src="images/redbus.jpg" alt="RedBus Logo"class="video-card-image">
+                <video src="" muted loop class="card-video" >
+
+                </video>
+            </div>
+
+        </div>
+        
+        <div class="video-card-container">
+            <div class="video-card">
+                <img src="images/ola.jpg" alt="Ola Logo"class="video-card-image">
+                <video src="" class="card-video" loop muted>
+
+                </video>
+            </div>
+
+        </div>
+        
+        <div class="video-card-container">
+            <div class="video-card">
+                <img src="images/bharatmaps.png" alt="BharatMaps Logo"class="video-card-image">
+                <video src="" class="card-video" loop muted>
+
+                </video>
+            </div>
+
+        </div>
+        </div>
+        <h1 class="title">Recommended For You</h1>
+        <div class="movies-list">
+            <button class="pre-btn" title="btn">
+                <img src="images/pre.png" alt="pre-btn">
+
+            </button>
+        
+            <button class="nxt-btn" title="btn">
+                <img src="images/nxt.png" alt="next-btn">
+                
+            </button>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./images/chennaiMarina.jpg" class="card-image" alt="p1">
+                
+                    <div class="card-body">
+                        <h2 class="name">Marina Beach</h2>
+                        <h6 class="des">Most populous beach of Chennai</h6>
+                        <button class="watchlist-btn" onclick="addToWatchList(1,8)">add to watchlist</button>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <img src="./images/delhiFort.jpg" class="card-image" alt="p1">
+                
+                    <div class="card-body">
+                        <h2 class="name">Red Fort</h2>
+                        <h6 class="des">One of the most ancient political monuments in the country</h6>
+                        <button class="watchlist-btn" onclick="addToWatchList(2,2)">add to watchlist</button>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <img src= "./images/elephantFallsShillong.jpg" class="card-image" alt="p1">
+                
+                    <div class="card-body">
+                        <h2 class="name">The Water Falls of Imphal</h2>
+                        <h6 class="des">Gateway to Refreshness in Imphal</h6>
+                        <button class="watchlist-btn" onclick="addToWatchList(3,4)">add to watchlist</button>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <img src="./images/gatewayMumbai.jpg" class="card-image" alt="p1">
+                
+                    <div class="card-body">
+                        <h2 class="name">Gateway of India</h2>
+                        <h6 class="des">Historic Building of Bombay and welcoming  monument for visitors from abroad .</h6>
+                        <button class="watchlist-btn" onclick="addToWatchList(4,6)">add to watchlist</button>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <img src="./images/ISKCONbengaluru.avif" class="card-image" alt="p1">
+                
+                    <div class="card-body">
+                        <h2 class="name">ISKCON Temple</h2>
+                        <h6 class="des">Bangalore</h6>
+                        <button class="watchlist-btn" onclick="addToWatchList(5,7)">add to watchlist</button>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <img src="./images/KashmirDal.jpg" class="card-image" alt="p1">
+                
+                    <div class="card-body">
+                        <h2 class="name">Dal Lake of Srinagar</h2>
+                        <h6 class="des">The purest and most serene location in all of Kashmir</h6>
+                        <button class="watchlist-btn" onclick="addToWatchList(6,1)">add to watchlist</button>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <img src="./images/madurai.jpg" class="card-image" alt="p1">
+                
+                    <div class="card-body">
+                        <h2 class="name">Meenakshi Temple</h2>
+                        <h6 class="des">Made in time of earlier regional rulers of Madras in Madurai</h6>
+                        <button class="watchlist-btn" onclick="addToWatchList(7,9)">add to watchlist</button>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <img src="./images/vicMemorialCalcutta.jpg" class="card-image" alt="p1">
+                
+                    <div class="card-body">
+                        <h2 class="name">Victoria Memorial</h2>
+                        <h6 class="des">Ancient British building in Calcutta ,presently with the largest library in India</h6>
+                        <button class="watchlist-btn" onclick="addToWatchList(8,5)">add to watchlist</button>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <img src="./images/indiaGateDelhi.jpg" class="card-image" alt="p1">
+                
+                    <div class="card-body">
+                        <h2 class="name">India Gate</h2>
+                        <h6 class="des">Lies near the Rashtrapati Bhavan ,an entrance to the capital of India </h6>
+                        <button class="watchlist-btn"onclick="addToWatchList(9,2)">add to watchlist</button>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <img src="./images/sikriDelhi.jpg" class="card-image" alt="p1">
+                
+                    <div class="card-body">
+                        <h2 class="name">Fatehpur Sikri</h2>
+                        <h6 class="des">Ancient Mughal building in Delhi</h6>
+                        <button class="watchlist-btn" onclick="addToWatchList(10,2)">add to watchlist</button>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <img src="./images/agraTaj.jpg" class="card-image" alt="p1">
+                
+                    <div class="card-body">
+                        <h2 class="name">Taj Mahal</h2>
+                        <h6 class="des">India's finest wonder to the world</h6>
+                        <button class="watchlist-btn" onclick="addToWatchList(11,3)">add to watchlist</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min"></script>
+            <script src="main.js" async></script>
+        
+    </body>
+
+</html>
+
